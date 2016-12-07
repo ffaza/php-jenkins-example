@@ -9,7 +9,7 @@ class HelloTest extends Silex\WebTestCase
     
     public function testHelloNameExample()
     {
-        //$client = $this->createClient();
+        $client = $this->createClient();
         $client->request("GET", "/hello/test");
         
         $this->assertTrue($client->getResponse()->isOk());
