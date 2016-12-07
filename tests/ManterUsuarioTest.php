@@ -1,6 +1,6 @@
 <?php
-
-//$path = '../../../vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
+//
+//$path = 'vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
 //if (file_exists($path)) {
 //    require_once $path;
 //} else {
@@ -22,6 +22,8 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
         $this->setHost('127.0.0.1');
         $this->setPort(8896);
         $this->setBrowserUrl('http://www1.mastercase.net/');
+        //$this->setDesiredCapabilities(2);
+        
     }
 
     /**
