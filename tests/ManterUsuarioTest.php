@@ -27,12 +27,12 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
        
 //DesiredCapabilities cap =DesiredCapabilities.firefox();
 
-        $this->setBrowser('chrome');
+        $this->setBrowser('firefox');
         //$this->
         //$this->setLocale()->b
         //$this->setBrowser('firefox');
         //$this->setHost('127.0.0.1');
-        //$this->setPort(8896);
+        $this->setPort(4444);
         $this->setBrowserUrl('http://localhost:4444/wd/hub');
         //$this->setDesiredCapabilities(['Browser'=>'firefox','platform'=>'ANY','version'=>'46.0']);
         //$this->ca
