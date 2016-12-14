@@ -22,7 +22,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
 
     protected function setUp() {
         
-       $this->webDriver = RemoteWebDriver::create('http://localhost:4444/wd/hub', DesiredCapabilities::chrome());
+       //$this->webDriver = RemoteWebDriver::create('http://localhost:4444/wd/hub', DesiredCapabilities::chrome());
         
        
 //DesiredCapabilities cap =DesiredCapabilities.firefox();
