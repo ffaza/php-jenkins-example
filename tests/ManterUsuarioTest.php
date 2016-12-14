@@ -27,7 +27,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
        //WebDriver driver = new RemoteWebDriver(new URL("http://jenkins.mydomain:4444/wd/hub"), capability);
 //DesiredCapabilities cap =DesiredCapabilities.firefox();
 
-        $this->setBrowser('chrome');
+        $this->setBrowser('firefox');
         //$this->
         //$this->setLocale()->b
         //$this->setBrowser('firefox');
