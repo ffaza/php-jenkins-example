@@ -9,7 +9,11 @@
 
 class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     
-    
+     /**
+     * @var RemoteWebDriver
+     */
+    protected $webDriver;
+
      public function createApplication()
     {
         return require __DIR__ . "/../src/app.php";
@@ -18,10 +22,14 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
 
     protected function setUp() {
         
+       $this->webDriver = RemoteWebDriver::create('http://localhost:4444/wd/hub', DesiredCapabilities::firefox());
+        
        
 //DesiredCapabilities cap =DesiredCapabilities.firefox();
 
         $this->setBrowser('chrome');
+        $this->
+        //$this->setLocale()->b
         //$this->setBrowser('firefox');
         //$this->setHost('127.0.0.1');
         $this->setPort(8896);
