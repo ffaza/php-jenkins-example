@@ -24,7 +24,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
        // $webDriver; = new RemoteWebDriver(new URL("http://jenkins.mydomain:4444/wd/;
        //$this->webDriver = RemoteWebDriver::create('http://localhost:4444/wd/hub', DesiredCapabilities::chrome());
         
-       
+       //WebDriver driver = new RemoteWebDriver(new URL("http://jenkins.mydomain:4444/wd/hub"), capability);
 //DesiredCapabilities cap =DesiredCapabilities.firefox();
 
         $this->setBrowser('chrome');
@@ -32,8 +32,10 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
         //$this->setLocale()->b
         //$this->setBrowser('firefox');
         //$this->setHost('127.0.0.1');
-        $this->setPort(4444);
+        $this->setPort(8082);
         $this->setBrowserUrl('http://jenkins.www1.mastercase.net:4444/wd/hub');
+        $this->setBrowserUrl('http://www1.mastercase.net/');
+
         //$this->setDesiredCapabilities(['Browser'=>'firefox','platform'=>'ANY','version'=>'46.0']);
         //$this->ca
         
