@@ -12,7 +12,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
      /**
      * @var RemoteWebDriver
      */
-    protected $webDriver;
+    //protected $webDriver;
 
      public function createApplication()
     {
@@ -27,7 +27,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
        //WebDriver driver = new RemoteWebDriver(new URL("http://jenkins.mydomain:4444/wd/hub"), capability);
 //DesiredCapabilities cap =DesiredCapabilities.firefox();
 
-        $this->setBrowser('firefox');
+        $this->setBrowser('chrome');
         //$this->
         //$this->setLocale()->b
         //$this->setBrowser('firefox');
