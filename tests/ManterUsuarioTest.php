@@ -21,6 +21,12 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     
 
     protected function setUp() {
+        
+        //$this->oWebDriver = new WebDriver( self::SELENIUM_SERVER, self::SELENIUM_SERVER_PORT);
+        //$this->oWebDriver->connect('firefox');
+        
+        
+        
        $this->setBrowser('firefox');
         //$this->setPort(5900);
         $this->setBrowserUrl('http://www1.mastercase.net/');
