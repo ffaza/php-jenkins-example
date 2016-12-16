@@ -32,7 +32,8 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
         $this->setBrowserUrl('http://www1.mastercase.net/');
         $b = $this->getBrowser();
         print_r($b);
-        exit();
+        //exit();
+        echo('aquiiiii ');
         $capabilities = DesiredCapabilities::chrome();
         
     }
