@@ -53,6 +53,7 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
      * @test                                          
      */                                                       
     public function pagamentoBoletoDesconto() {
+        //testes
         $this->url("/sandbox/gestor_inscricao/web/");
         $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
         $this->byId("siteuser-senha")->value("!12teste");
