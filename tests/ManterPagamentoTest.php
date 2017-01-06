@@ -31,8 +31,19 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
       protected function setUp() {
         $this->setBrowser('firefox');
         $this->setBrowserUrl('http://www1.mastercase.net/');
-        $this->port();
+        //$this->port();
         $this->setSeleniumServerRequestsTimeout(120000);
+        
+        $capabilities = DesiredCapabilities::chrome();
+//$host = 'http://localhost:4444/wd/hub'; // this is the default
+//$this->webDriver = RemoteWebDriver::create($host, $capabilities, 5000);
+//$cookie = array();
+//$cookie['name'] = 'NAME';
+//$cookie['value'] = 'VALUE';
+//$this->webDriver->manage()->addCookie($cookie);
+//$this->ad
+        
+        
 
         
         //$this->setPort(4444);
