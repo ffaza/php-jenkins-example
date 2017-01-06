@@ -23,7 +23,14 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         return require __DIR__ . "/../src/app.php";
     }
     
-    
+    /**
+     * @BeforeStep
+     */
+    public function cookies(BeforeStepScope $scope)
+    {
+        $this->getSession()->setCookie('ingredient', 'chocolate-chip');
+    }
+
    
     
     
@@ -52,14 +59,7 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         ////
 } 
 
- /**
-     * @BeforeStep
-     */
-    public function cookies(BeforeStepScope $scope)
-    {
-        $this->getSession()->setCookie('ingredient', 'chocolate-chip');
-    }
-
+ 
   
     /**                                          
      * @test                                          
