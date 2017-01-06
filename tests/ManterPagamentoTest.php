@@ -35,7 +35,7 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         
         $this->setSeleniumServerRequestsTimeout(120000);
         
-        $capabilities = DesiredCapabilities::chrome();
+        //$capabilities = DesiredCapabilities::chrome();
 //$host = 'http://localhost:4444/wd/hub'; // this is the default
 //$this->webDriver = RemoteWebDriver::create($host, $capabilities, 5000);
 //$cookie = array();
