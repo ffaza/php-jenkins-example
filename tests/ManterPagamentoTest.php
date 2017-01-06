@@ -31,6 +31,18 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         $this->getSession()->setCookie('ingredient', 'chocolate-chip');
     }
 
+    /**
+     * @BeforeStep
+     */
+      public function prepareSession()
+    {
+        $session = parent::prepareSession();
+        $this->url('http://www1.mastercase.net/');
+
+        return $session;
+    }
+    
+    
    
     
     
