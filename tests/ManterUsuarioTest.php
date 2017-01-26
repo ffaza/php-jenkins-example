@@ -1,11 +1,11 @@
 <?php
-//
-//$path = 'vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
-//if (file_exists($path)) {
-//    require_once $path;
-//} else {
-//    require_once dirname(__FILE__) . '/' . $path;
-//}
+
+$path = 'vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
+if (file_exists($path)) {
+    require_once $path;
+} else {
+    require_once dirname(__FILE__) . '/' . $path;
+}
 
 class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     
