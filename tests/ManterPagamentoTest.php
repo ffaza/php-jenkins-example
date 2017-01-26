@@ -48,12 +48,12 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
     
     //put your code here
       protected function setUp() {
-        $this->setBrowser('firefox');
+        $this->setBrowser('chrome');
         //$this->port(8896);
         //$this->setUpPage();
         $this->setBrowserUrl('http://www1.mastercase.net/');
         
-        $this->setSeleniumServerRequestsTimeout(120000);
+        //$this->setSeleniumServerRequestsTimeout(120000);
         
         //$capabilities = DesiredCapabilities::chrome();
 //$host = 'http://localhost:4444/wd/hub'; // this is the default
