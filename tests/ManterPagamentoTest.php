@@ -23,51 +23,13 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         return require __DIR__ . "/../src/app.php";
     }
     
-//    /**
-//     * @BeforeStep
-//     */
-//    public function cookies(BeforeStepScope $scope)
-//    {
-//        $this->getSession()->setCookie('ingredient', 'chocolate-chip');
-//    }
-//
-//    /**
-//     * @BeforeStep
-//     */
-//      public function prepareSession()
-//    {
-//        $session = parent::prepareSession();
-//        $this->url('http://www1.mastercase.net/');
-//
-//        return $session;
-//    }
-//    
-//    
-   
-    
-    
+           
     //put your code here
       protected function setUp() {
-        $this->setBrowser('chrome');
-        $this->port(8896);
+        $this->setBrowser('firefox');
+        $this->setPort(4444);
         $this->setBrowserUrl('http://www1.mastercase.net/');
-        
-        //$this->setSeleniumServerRequestsTimeout(120000);
-        
-        //$capabilities = DesiredCapabilities::chrome();
-//$host = 'http://localhost:4444/wd/hub'; // this is the default
-//$this->webDriver = RemoteWebDriver::create($host, $capabilities, 5000);
-//$cookie = array();
-//$cookie['name'] = 'NAME';
-//$cookie['value'] = 'VALUE';
-//$this->webDriver->manage()->addCookie($cookie);
-//$this->ad
-        
-        
-
-        
-        //$this->setPort(4444);
-        ////
+   
 } 
 
  

@@ -20,35 +20,12 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     }
     
     
-    
-      
-    /**
-     * @BeforeStep
-     */
-    public function cookies(BeforeStepScope $scope)
-    {
-        $this->getSession()->setCookie('ingredient', 'chocolate-chip');
-    }
-    
 
     protected function setUp() {
-        
-        //$this->oWebDriver = new WebDriver( self::SELENIUM_SERVER, self::SELENIUM_SERVER_PORT);
-        //$this->oWebDriver->connect('firefox');
-        
-        
-        
-        $this->setBrowser('chrome');
+        $this->setBrowser('firefox');
         $this->setPort(4444);
         $this->setBrowserUrl('http://www1.mastercase.net/');
-        //$this->setSeleniumServerRequestsTimeout(120000);
-        //$this->set
-        //print_r($b);
-        //exit();
-        //echo('aquiiiii ');
-        //$capabilities = DesiredCapabilities::chrome();
-        
-    }
+     }
     
   
 
