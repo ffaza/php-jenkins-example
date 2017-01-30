@@ -26,9 +26,12 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
            
     //put your code here
       protected function setUp() {
+          System.
+          
         $this->setBrowser('chrome');
         //$this->setPort(4444);
-        $this->setBrowserUrl('http://www1.mastercase.net/');
+        //$this->setBrowserUrl('http://www1.mastercase.net/');
+        $this->setBrowserUrl('http://jenkins.mastercase.net:4444/wd/hub');
    
 } 
 
