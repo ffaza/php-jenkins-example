@@ -23,7 +23,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
 
     protected function setUp() {
         $this->setBrowser('firefox');
-        $this->setPort(4444);
+        //$this->setPort(4444);
         $this->setBrowserUrl('http://www1.mastercase.net/');
         //teste
      }
