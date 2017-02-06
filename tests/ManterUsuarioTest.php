@@ -26,7 +26,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
         //$this->setPort(4444);
         //$this->setHost('http://jenkins.mastercase.net:4444/wd/hub');
         $this->setBrowserUrl('http://www1.mastercase.net/');
-         sleep(6);
+         //sleep(6);
         //teste
      }
     
@@ -36,7 +36,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
      * @test
      */
     public function cadastrarUsuario() {
-          sleep(9);
+          //sleep(9);
         $this->url("/sandbox/gestor_inscricao/web/index.php");
         $this->byXPath("//div[1]/div/div/div[3]/div/div/a")->click();
         $this->byId("nomecompleto")->value("Ana Clara Barvosa");
