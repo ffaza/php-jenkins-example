@@ -36,8 +36,23 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
      * @test
      */
     public function cadastrarUsuario() {
+        
+        $session = $this->prepareSession();
+        // cookies
+        $session->cookie()->remove('language_version');
+        $session->cookie()->add('language_version', 'en')->set();
+        //$this->url('/');
+        $session->cookie()->postCookie($data) ;
+        $session->url('/sandbox/gestor_inscricao/web/index.php');
+        
+        
+        
+        
+        
+        
+        
           //sleep(9);
-        $this->url("/sandbox/gestor_inscricao/web/index.php");
+        //$this->url("/sandbox/gestor_inscricao/web/index.php");
         $this->byXPath("//div[1]/div/div/div[3]/div/div/a")->click();
         $this->byId("nomecompleto")->value("Ana Clara Barvosa");
         $this->byId("email")->value("testetesteeee@teste5testeste.com.br");
