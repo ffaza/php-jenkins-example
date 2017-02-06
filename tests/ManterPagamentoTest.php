@@ -43,11 +43,7 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
      */                                                       
     public function pagamentoBoleto() {
         $this->url("/sandbox/gestor_inscricao/web/");
-        
-        //setar cookies
-//        $this->cookie()->remove('language_version');
-//        $this->cookie()->add('language_version', 'en')->set();
-                  
+              
         $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
         $this->byId("siteuser-senha")->value("!12teste");
         $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
