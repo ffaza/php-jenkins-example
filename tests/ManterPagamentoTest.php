@@ -39,6 +39,13 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
      * @test                                          
      */                                                       
     public function pagamentoBoleto() {
+        $session = $this->prepareSession();
+        // cookies
+        $session->cookie()->remove('language_version');
+        $session->cookie()->add('language_version', 'en')->set();
+        //$this->url('/');
+                 
+        
         //$this->url('http://www.google.com.br/');
         $this->url("/sandbox/gestor_inscricao/web/");
         
