@@ -36,6 +36,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
      * @test
      */
     public function cadastrarUsuario() {
+          sleep(9);
         $this->url("/sandbox/gestor_inscricao/web/index.php");
         $this->byXPath("//div[1]/div/div/div[3]/div/div/a")->click();
         $this->byId("nomecompleto")->value("Ana Clara Barvosa");
