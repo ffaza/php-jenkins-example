@@ -44,10 +44,11 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         $session->cookie()->remove('language_version');
         $session->cookie()->add('language_version', 'en')->set();
         //$this->url('/');
-                 
+        $session->cookie()->postCookie($data) ;
+        $session->url('/sandbox/gestor_inscricao/web/');
         
         //$this->url('http://www.google.com.br/');
-        $this->url("/sandbox/gestor_inscricao/web/");
+        //$this->url("/sandbox/gestor_inscricao/web/");
         
         $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
         $this->byId("siteuser-senha")->value("!12teste");
