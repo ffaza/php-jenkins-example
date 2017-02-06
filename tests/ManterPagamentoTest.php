@@ -32,8 +32,7 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         //$this->setPort(4444);
         $this->setBrowserUrl('http://www1.mastercase.net/');
         //$this->setHost('http://jenkins.mastercase.net:4444/wd/hub');
-        $this->setBrowserUrl('http://www1.mastercase.net/');
-
+        //$this->setBrowserUrl('http://www1.mastercase.net/');
    
 } 
 
@@ -45,7 +44,6 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
     public function pagamentoBoleto() {
         $this->url("/sandbox/gestor_inscricao/web/");
         
-          
         //setar cookies
         $this->cookie()->remove('language_version');
         $this->cookie()->add('language_version', 'en')->set();
