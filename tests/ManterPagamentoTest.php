@@ -1,5 +1,5 @@
 <?php
-//$path = '../../../../vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
+//$path = '../../vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
 //if (file_exists($path)) {
 //    require_once $path;
 //} else {
@@ -29,9 +29,8 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
          // System.
           
         $this->setBrowser('chrome');
-        //$this->setPort(4444);
-        //$this->setBrowserUrl('http://www1.mastercase.net/');
-        //$this->setHost('http://jenkins.mastercase.net:4444/wd/hub');
+        $this->setHost('10.41.1.131');
+        $this->setPort(4444);
         $this->setBrowserUrl('http://www1.mastercase.net/');
         //$this->setBrowserUrl('http://www.google.com.br/');
        } 
