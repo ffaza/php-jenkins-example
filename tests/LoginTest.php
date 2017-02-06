@@ -35,8 +35,8 @@ class LoginTest extends PHPUnit_Extensions_Selenium2TestCase
      * setup will be run for all our tests
      */
     protected function setUp()  {
-        $this->setBrowserUrl(PHPUNIT_TESTSUITE_EXTENSION_SELENIUM_BASEURL);
-        $this->setHost(PHPUNIT_TESTSUITE_EXTENSION_SELENIUM_HOST);
+        $this->setBrowserUrl('http://www1.mastercase.net/');
+        //$this->setHost(PHPUNIT_TESTSUITE_EXTENSION_SELENIUM_HOST);
     } // setUp()
  
     /**
