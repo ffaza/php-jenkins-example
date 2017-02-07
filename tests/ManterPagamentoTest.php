@@ -18,6 +18,7 @@
  */
 class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
     
+     
       public function createApplication()
     {
         return require __DIR__ . "/../src/app.php";
@@ -39,6 +40,9 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
      * @test                                          
      */                                                       
     public function pagamentoBoleto() {
+        
+            //$teste = array();
+        
         $session = $this->prepareSession();
         $session->url('/sandbox/gestor_inscricao/web/');
         //$session->
