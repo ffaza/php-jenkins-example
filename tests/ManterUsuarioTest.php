@@ -9,6 +9,8 @@
 
 class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     
+    
+    
      /**
      * @var RemoteWebDriver
      */
@@ -38,12 +40,14 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     public function cadastrarUsuario() {
         
         $session = $this->prepareSession();
-        // cookies
-        $session->cookie()->remove('language_version');
-        $session->cookie()->add('language_version', 'en')->set();
+//        // cookies
+//        $session->cookie()->remove('language_version');
+//        $session->cookie()->add('language_version', 'en')->set();
         //$this->url('/');
-        $session->cookie()->postCookie($data) ;
+        //$session->cookie()->postCookie($data) ;
         $session->url('/sandbox/gestor_inscricao/web/index.php');
+        //$session->by
+        
         
         
         
