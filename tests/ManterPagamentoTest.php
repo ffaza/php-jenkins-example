@@ -50,6 +50,7 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
          //$session->$cookies->add($this->byId("siteuser-email"), "ricardo@mastercase.com.br");
          $session->cookie()->add($this->byId("siteuser-email"), "ricardo@mastercase.com.br");
          $session->byId("siteuser-email")->value("ricardo@mastercase.com.br");
+         $session->cookie()->add($name, $value)->path($path);
          //$session->cookie()->add($name, $value)->
         // cookies
         //$session->cookie()->remove('language_version');
@@ -84,19 +85,19 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         //$session->url('/sandbox/gestor_inscricao/web/');
         
         $arrayFofinhoFunciona[]=$this->url("/sandbox/gestor_inscricao/web/");
-        $arrayFofinhoFunciona[]= $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
-        $arrayFofinhoFunciona[]=$this->byId("siteuser-senha")->value("!12teste");
-        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
-        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
-        // ERROR: Caught exception [TypeError: value.replace is not a function]
-        $arrayFofinhoFunciona[]= $this->byXPath("//button[@type='submit']")->click();
-        $arrayFofinhoFunciona[]=$this->byCssSelector("button.btn.btn-primary")->click();
-        $arrayFofinhoFunciona[]= $this->byName("cupom")->value("DESCONTO1000");
-        $arrayFofinhoFunciona[]=$this->byCssSelector("button.btn.btn-default")->click();
-        $arrayFofinhoFunciona[]=$this->byId("TABELA_BOLETO")->click();
-        $arrayFofinhoFunciona[]=$this->byId("gerar_boleto")->click();
-        //$arrayFofinhoFunciona[]=sleep(5);
-        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();
+//        $arrayFofinhoFunciona[]= $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
+//        $arrayFofinhoFunciona[]=$this->byId("siteuser-senha")->value("!12teste");
+//        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
+//        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
+//        // ERROR: Caught exception [TypeError: value.replace is not a function]
+//        $arrayFofinhoFunciona[]= $this->byXPath("//button[@type='submit']")->click();
+//        $arrayFofinhoFunciona[]=$this->byCssSelector("button.btn.btn-primary")->click();
+//        $arrayFofinhoFunciona[]= $this->byName("cupom")->value("DESCONTO1000");
+//        $arrayFofinhoFunciona[]=$this->byCssSelector("button.btn.btn-default")->click();
+//        $arrayFofinhoFunciona[]=$this->byId("TABELA_BOLETO")->click();
+//        $arrayFofinhoFunciona[]=$this->byId("gerar_boleto")->click();
+//        //$arrayFofinhoFunciona[]=sleep(5);
+//        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();
         $session->cookie()->postCookie($arrayFofinhoFunciona);
     }
 //    
