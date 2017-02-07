@@ -39,60 +39,65 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
     /**                                          
      * @test                                          
      */                                                       
-    public function pagamentoBoleto() {
-        
-            //$teste = array();
-        
+//    public function pagamentoBoleto() {
+//        
+//            //$teste = array();
+//        
+//        $session = $this->prepareSession();
+//        $session->url('/sandbox/gestor_inscricao/web/');
+//        //$session->
+//        //$session->cookie()->;
+//         //$session->$cookies->add($this->byId("siteuser-email"), "ricardo@mastercase.com.br");
+//         $session->cookie()->add($this->byId("siteuser-email"), "ricardo@mastercase.com.br");
+//         //$session->cookie()->add($name, $value)->
+//        // cookies
+//        //$session->cookie()->remove('language_version');
+//        //$session->cookie()->add('language_version', 'en')->set();
+//        //$this->url('/');
+//        //$session->cookie()->add($data) ;
+//        //$session->url('/sandbox/gestor_inscricao/web/');
+//        
+//        //$this->url('http://www.google.com.br/');
+//        //$this->url("/sandbox/gestor_inscricao/web/");
+////        
+////        $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
+////        $this->byId("siteuser-senha")->value("!12teste");
+////        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
+////        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
+////        // ERROR: Caught exception [TypeError: value.replace is not a function]
+////        $this->byXPath("//button[@type='submit']")->click();
+////        $this->byCssSelector("button.btn.btn-primary")->click();
+////        $this->byId("TABELA_BOLETO")->click();
+////        $this->byId("gerar_boleto")->click();
+////        sleep(5);
+////        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();    
+//    }
+     
+    /**                                          
+     * @test                                          
+     */                                                       
+    public function pagamentoBoletoDesconto() {
+        //testes
+        $arrayFofinhoFunciona = array();
         $session = $this->prepareSession();
-        $session->url('/sandbox/gestor_inscricao/web/');
-        //$session->
-        //$session->cookie()->;
-         //$session->$cookies->add($this->byId("siteuser-email"), "ricardo@mastercase.com.br");
-         $session->cookie()->add($this->byId("siteuser-email"), "ricardo@mastercase.com.br");
-         //$session->cookie()->add($name, $value)->
-        // cookies
-        //$session->cookie()->remove('language_version');
-        //$session->cookie()->add('language_version', 'en')->set();
-        //$this->url('/');
-        //$session->cookie()->add($data) ;
         //$session->url('/sandbox/gestor_inscricao/web/');
         
-        //$this->url('http://www.google.com.br/');
-        //$this->url("/sandbox/gestor_inscricao/web/");
-//        
-//        $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
-//        $this->byId("siteuser-senha")->value("!12teste");
-//        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
-//        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
-//        // ERROR: Caught exception [TypeError: value.replace is not a function]
-//        $this->byXPath("//button[@type='submit']")->click();
-//        $this->byCssSelector("button.btn.btn-primary")->click();
-//        $this->byId("TABELA_BOLETO")->click();
-//        $this->byId("gerar_boleto")->click();
-//        sleep(5);
-//        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();    
+        $arrayFofinhoFunciona[]=$this->url("/sandbox/gestor_inscricao/web/");
+        $arrayFofinhoFunciona[]= $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
+        $arrayFofinhoFunciona[]=$this->byId("siteuser-senha")->value("!12teste");
+        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
+        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
+        // ERROR: Caught exception [TypeError: value.replace is not a function]
+        $arrayFofinhoFunciona[]= $this->byXPath("//button[@type='submit']")->click();
+        $arrayFofinhoFunciona[]=$this->byCssSelector("button.btn.btn-primary")->click();
+        $arrayFofinhoFunciona[]= $this->byName("cupom")->value("DESCONTO1000");
+        $arrayFofinhoFunciona[]=$this->byCssSelector("button.btn.btn-default")->click();
+        $arrayFofinhoFunciona[]=$this->byId("TABELA_BOLETO")->click();
+        $arrayFofinhoFunciona[]=$this->byId("gerar_boleto")->click();
+        //$arrayFofinhoFunciona[]=sleep(5);
+        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();
+        $session->cookie()->postCookie($arrayFofinhoFunciona);
     }
-     
-//    /**                                          
-//     * @test                                          
-//     */                                                       
-//    public function pagamentoBoletoDesconto() {
-//        //testes
-//        $this->url("/sandbox/gestor_inscricao/web/");
-//        $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
-//        $this->byId("siteuser-senha")->value("!12teste");
-//        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
-//        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
-//        // ERROR: Caught exception [TypeError: value.replace is not a function]
-//        $this->byXPath("//button[@type='submit']")->click();
-//        $this->byCssSelector("button.btn.btn-primary")->click();
-//        $this->byName("cupom")->value("DESCONTO1000");
-//        $this->byCssSelector("button.btn.btn-default")->click();
-//        $this->byId("TABELA_BOLETO")->click();
-//        $this->byId("gerar_boleto")->click();
-//        sleep(5);
-//        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();
-//    }
 //    
 //    /**
 //     * @test
