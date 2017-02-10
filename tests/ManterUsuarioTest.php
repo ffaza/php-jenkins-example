@@ -93,13 +93,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
         //$this->byLinkText("OK")->click();
     }
     
-      public function prepareSession()
-    {
-        $session = parent::prepareSession();
-        $this->url('/sandbox/gestor_inscricao/web/');
-
-        return $session;
-    }
+   
     
     
  /**
@@ -153,5 +147,15 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
         sleep(5);
         $this->byXPath("//div[2]/div[2]/div/div/div[2]/form/div[3]/button")->click();
     }
+    
+    
+       public function prepareSession()
+    {
+        $session = parent::prepareSession();
+        $this->url('/sandbox/gestor_inscricao/web/');
+
+        return $session;
+    }
+    
 }
 
