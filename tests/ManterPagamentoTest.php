@@ -77,6 +77,15 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         sleep(5);
         $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();    
     }
+    
+    
+      public function prepareSession()
+    {
+        $session = parent::prepareSession();
+        $this->url('/sandbox/gestor_inscricao/web/');
+
+        return $session;
+    }
      
     /**                                          
      * @test                                          
@@ -103,6 +112,11 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
 //        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();
         //$session->cookie()->postCookie($arrayFofinhoFunciona);
     }
+    
+    
+   
+    
+    
 //    
 //    /**
 //     * @test
