@@ -32,8 +32,10 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         $this->setBrowser('chrome');
         //$this->setHost('10.41.1.131');
         //$this->setPort(8896);
-        $this->setBrowserUrl('http://www1.mastercase.net/');
+        $this->setBrowserUrl('http://10.41.1.20/');
         //$this->setBrowserUrl('http://www.google.com.br/');
+        //$this->setupSpecificBrowser($params);
+        //$this->runTest()
        } 
    
     /**                                          
@@ -41,14 +43,15 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
      */                                                       
     public function pagamentoBoleto() {
         
+        //$this->w
+        
 //            //$teste = array();
-//        
-//        $session = $this->prepareSession();
+   $session = $this->prepareSession();
 //        $session->url('/sandbox/gestor_inscricao/web/');
 //        //$session->
 //        //$session->cookie()->;
 //         //$session->$cookies->add($this->byId("siteuser-email"), "ricardo@mastercase.com.br");
-//         $session->cookie()->add($this->byId("siteuser-email"), "ricardo@mastercase.com.br");
+       $session->cookie()->add('', $value);
 //         $session->byId("siteuser-email")->value("ricardo@mastercase.com.br");
 //         $session->cookie()->add($name, $value)->path($path);
          //$session->cookie()->add($name, $value)->
