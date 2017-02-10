@@ -10,9 +10,7 @@ class TestExtra  extends PHPUnit_Extensions_Selenium2TestCase
     }
     
     
-    /**
-     * Setup
-     */
+    
     public function setUp()
     {
         $this->setBrowser('firefox');
