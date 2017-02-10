@@ -96,14 +96,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
    * @test
    */
     
-    
-      public function prepareSession()
-    {
-        $session = parent::prepareSession();
-        $this->url('/sandbox/gestor_inscricao/web/');
-
-        return $session;
-    }
+  
     
     
     public function efetuarLogin() {
