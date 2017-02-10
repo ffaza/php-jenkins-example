@@ -21,10 +21,9 @@ class TestExtra  extends PHPUnit_Extensions_Selenium2TestCase
         $this->setBrowserUrl('http://www.extra.com.br/');
     }
     
-    /** 
-     * Method test 
-     * @test 
-     */ 
+   /**                                          
+     * @test                                          
+     */
     public function test()
     {
         $this->url("/");
