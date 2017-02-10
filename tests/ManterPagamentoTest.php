@@ -46,12 +46,12 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         //$this->w
         
 //            //$teste = array();
-   $session = $this->prepareSession();
+   //$session = $this->prepareSession();
 //        $session->url('/sandbox/gestor_inscricao/web/');
 //        //$session->
 //        //$session->cookie()->;
 //         //$session->$cookies->add($this->byId("siteuser-email"), "ricardo@mastercase.com.br");
-       $session->cookie()->add('', $value);
+       //$session->cookie()->add('', $value);
 //         $session->byId("siteuser-email")->value("ricardo@mastercase.com.br");
 //         $session->cookie()->add($name, $value)->path($path);
          //$session->cookie()->add($name, $value)->
@@ -83,11 +83,11 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
      */                                                       
     public function pagamentoBoletoDesconto() {
         //testes
-        $arrayFofinhoFunciona = array();
-        $session = $this->prepareSession();
+        //$arrayFofinhoFunciona = array();
+        //$session = $this->prepareSession();
         //$session->url('/sandbox/gestor_inscricao/web/');
         
-        $arrayFofinhoFunciona[]=$this->url("/sandbox/gestor_inscricao/web/");
+       //$arrayFofinhoFunciona[]=$this->url("/sandbox/gestor_inscricao/web/");
 //        $arrayFofinhoFunciona[]= $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
 //        $arrayFofinhoFunciona[]=$this->byId("siteuser-senha")->value("!12teste");
 //        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
@@ -101,7 +101,7 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
 //        $arrayFofinhoFunciona[]=$this->byId("gerar_boleto")->click();
 //        //$arrayFofinhoFunciona[]=sleep(5);
 //        $arrayFofinhoFunciona[]=$this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();
-        $session->cookie()->postCookie($arrayFofinhoFunciona);
+        //$session->cookie()->postCookie($arrayFofinhoFunciona);
     }
 //    
 //    /**
