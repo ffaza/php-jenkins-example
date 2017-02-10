@@ -75,7 +75,8 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         $this->byId("TABELA_BOLETO")->click();
         $this->byId("gerar_boleto")->click();
         sleep(5);
-        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click();    
+        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click(); 
+        //$this->p
     }
     
     

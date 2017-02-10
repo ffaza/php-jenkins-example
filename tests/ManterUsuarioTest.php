@@ -24,7 +24,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     
 
     protected function setUp() {
-        $this->setBrowser('firefox');
+        $this->setBrowser('chrome');
         //$this->setPort(4444);
         //$this->setHost('http://jenkins.mastercase.net:4444/wd/hub');
         $this->setBrowserUrl('http://www1.mastercase.net/');
@@ -92,6 +92,16 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
         $this->byXPath("(//button[@type='button'])[6]")->click();
         //$this->byLinkText("OK")->click();
     }
+    
+      public function prepareSession()
+    {
+        $session = parent::prepareSession();
+        $this->url('/sandbox/gestor_inscricao/web/');
+
+        return $session;
+    }
+    
+    
  /**
    * @test
    */
