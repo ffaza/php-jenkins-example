@@ -131,22 +131,22 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     /**
      * @test
      */
-    public function editarPerfil() {
-        $this->url("/sandbox/gestor_inscricao/web/");
-        $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
-        $this->byId("siteuser-senha")->value("!12teste");
-        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
-        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
-        // ERROR: Caught exception [TypeError: value.replace is not a function]
-        $this->byXPath("//button[@type='submit']")->click();
-        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[1]")->click();
-        sleep(5);
-        $this->byXPath("//div[2]/div/div[2]/ul/li[2]/a")->click();
-        sleep(5);
-        $this->byXPath("//div[2]/div[1]/div[3]/div/div[2]/div[2]/table/tbody/tr[2]/td[3]/button[1]")->click();
-        sleep(5);
-        $this->byXPath("//div[2]/div[2]/div/div/div[2]/form/div[3]/button")->click();
-    }
+//    public function editarPerfil() {
+//        $this->url("/sandbox/gestor_inscricao/web/");
+//        $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
+//        $this->byId("siteuser-senha")->value("!12teste");
+//        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
+//        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
+//        // ERROR: Caught exception [TypeError: value.replace is not a function]
+//        $this->byXPath("//button[@type='submit']")->click();
+//        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[1]")->click();
+//        sleep(5);
+//        $this->byXPath("//div[2]/div/div[2]/ul/li[2]/a")->click();
+//        sleep(5);
+//        $this->byXPath("//div[2]/div[1]/div[3]/div/div[2]/div[2]/table/tbody/tr[2]/td[3]/button[1]")->click();
+//        sleep(5);
+//        $this->byXPath("//div[2]/div[2]/div/div/div[2]/form/div[3]/button")->click();
+//    }
     
     
        public function prepareSession()
