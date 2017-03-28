@@ -107,12 +107,12 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
 
         $this->url("/sandbox/gestor_inscricao/web/");
         // ERROR: Caught exception [TypeError: value.replace is not a function]
-        $this->byId("siteuser-email")->value("luciana@mastercase.com.br");
-        $this->byId("siteuser-senha")->value("851703");
-        $this->byId('siteuser-id_evento')->value('Testes do sistema Gestor de Eventos');
-        $this->byXPath("//button[@type='submit']")->click();
-        //usuario logou e fez logoff, clicou no botao sair 
-        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]");
+//        $this->byId("siteuser-email")->value("luciana@mastercase.com.br");
+//        $this->byId("siteuser-senha")->value("851703");
+//        $this->byId('siteuser-id_evento')->value('Testes do sistema Gestor de Eventos');
+//        $this->byXPath("//button[@type='submit']")->click();
+//        //usuario logou e fez logoff, clicou no botao sair 
+//        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]");
     }
 
    /**
