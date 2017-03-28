@@ -65,17 +65,17 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
         //$this->url('http://www.google.com.br/');
         $this->url("/sandbox/gestor_inscricao/web/");
         
-        $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
-        $this->byId("siteuser-senha")->value("!12teste");
-        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
-        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
-        // ERROR: Caught exception [TypeError: value.replace is not a function]
-        $this->byXPath("//button[@type='submit']")->click();
-        $this->byCssSelector("button.btn.btn-primary")->click();
-        $this->byId("TABELA_BOLETO")->click();
-        $this->byId("gerar_boleto")->click();
-        sleep(5);
-        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click(); 
+//        $this->byId("siteuser-email")->value("ricardo@mastercase.com.br");
+//        $this->byId("siteuser-senha")->value("!12teste");
+//        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select")->click();
+//        $this->byXPath("//div[1]/div/div/div[2]/div/div/form/select/option[4]")->click();
+//        // ERROR: Caught exception [TypeError: value.replace is not a function]
+//        $this->byXPath("//button[@type='submit']")->click();
+//        $this->byCssSelector("button.btn.btn-primary")->click();
+//        $this->byId("TABELA_BOLETO")->click();
+//        $this->byId("gerar_boleto")->click();
+//        sleep(5);
+//        $this->byXPath("//div[1]/div/div/div/div/div[2]/a[4]")->click(); 
         //$this->p
     }
     
