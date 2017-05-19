@@ -1,11 +1,11 @@
 <?php
 
-//$path = 'vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
-//if (file_exists($path)) {
-//    require_once $path;
-//} else {
-//    require_once dirname(__FILE__) . '/' . $path;
-//}
+$path = '../../vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
+if (file_exists($path)) {
+    require_once $path;
+} else {
+    require_once dirname(__FILE__) . '/' . $path;
+}   
 
 class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     
@@ -24,7 +24,7 @@ class ManterUsuarioTest extends PHPUnit_Extensions_Selenium2TestCase {
     
 
     protected function setUp() {
-        $this->setBrowser('chrome');
+        $this->setBrowser('firefox');
         //$this->setPort(4444);
         //$this->setHost('http://jenkins.mastercase.net:4444/wd/hub');
         $this->setBrowserUrl('http://www1.mastercase.net/');
