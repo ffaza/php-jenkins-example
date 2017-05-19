@@ -8,7 +8,7 @@
  <property name="phpdox"  value="${basedir}/vendor/bin/phpdox"/>
  <property name="phploc"  value="${basedir}/vendor/bin/phploc"/>
  <property name="phpmd"   value="${basedir}/vendor/bin/phpmd"/>
- <property name="phpunit" value="${basedir}/vendor/bin/phpunit"/>
+ <!--<property name="phpunit" value="${basedir}/vendor/bin/phpunit"/> -->
 
  <target name="full-build"
          depends="prepare,static-analysis,phpunit-ci,phpdox,-check-failure"
