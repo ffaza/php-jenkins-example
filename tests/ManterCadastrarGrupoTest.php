@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/../vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 /*
  * To change this license header, choose License Headers in Project Properties.
