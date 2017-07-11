@@ -21,7 +21,7 @@ class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
      
       public function createApplication()
     {
-        return require __DIR__ . "/../src/app.php";
+        return require __DIR__ . "../src/app.php";
     }
     
            
