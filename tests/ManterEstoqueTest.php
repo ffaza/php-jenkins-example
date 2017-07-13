@@ -24,12 +24,12 @@ class ManterEstoqueTest extends PHPUnit_Extensions_Selenium2TestCase
 //        return require __DIR__ . "/../../tests/app.php";
 //    }
 
-    //put your code here
-    protected function setUp()
-    {
-        $this->setBrowser('chrome');
-        $this->setBrowserUrl('http://debug.store.sbcp.live/');
-    }
+//    //put your code here
+//    protected function setUp()
+//    {
+//        $this->setBrowser('chrome');
+//        $this->setBrowserUrl('http://debug.store.sbcp.live/');
+//    }
 
     /**
      * @test                                          
