@@ -7,7 +7,7 @@
        
   <testsuites>
     <testsuite name="php-jenkins-example">
-      <directory suffix="Test.php">tests/</directory>
+      <directory suffix="Test.php">testsss/</directory>
     </testsuite>
   </testsuites>
 
