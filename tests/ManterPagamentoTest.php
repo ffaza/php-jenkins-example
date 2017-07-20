@@ -1,10 +1,10 @@
 <?php
-$path = '../vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
-if (file_exists($path)) {
-    require_once $path;
-} else {
-    require_once dirname(__FILE__) . '/' . $path;
-}      
+//$path = '../vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
+//if (file_exists($path)) {
+//    require_once $path;
+//} else {
+//    require_once dirname(__FILE__) . '/' . $path;
+//}      
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,25 +18,25 @@ if (file_exists($path)) {
  */
 class ManterPagamentoteste  extends PHPUnit_Extensions_Selenium2TestCase {
     
-     
-      public function createApplication()
-    {
-        return require __DIR__ . "../src/app.php";
-    }
+//     
+//      public function createApplication()
+//    {
+//        return require __DIR__ . "../src/app.php";
+//    }
     
            
-    //put your code here
-      protected function setUp() {
-         // System.
-          
-        $this->setBrowser('firefox');
-        //$this->setHost('10.41.1.131');
-        //$this->setPort(8896);
-        $this->setBrowserUrl('http://10.41.1.20/');
-        //$this->setBrowserUrl('http://www.google.com.br/');
-        //$this->setupSpecificBrowser($params);
-        //$this->runTest()
-       } 
+//    //put your code here
+//      protected function setUp() {
+//         // System.
+//          
+//        $this->setBrowser('firefox');
+//        //$this->setHost('10.41.1.131');
+//        //$this->setPort(8896);
+//        $this->setBrowserUrl('http://10.41.1.20/');
+//        //$this->setBrowserUrl('http://www.google.com.br/');
+//        //$this->setupSpecificBrowser($params);
+//        //$this->runTest()
+//       } 
    
     /**                                          
      * @test                                          

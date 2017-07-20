@@ -1,11 +1,12 @@
 <?php
 
-$path = '../vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
-if (file_exists($path)) {
-    require_once $path;
-} else {
-    require_once dirname(__FILE__) . '/' . $path;
-} /*
+//$path = '../vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php';
+//if (file_exists($path)) {
+//    require_once $path;
+//} else {
+//    require_once dirname(__FILE__) . '/' . $path;
+//}
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -25,12 +26,12 @@ class ManterBancoDadosEmailTest extends PHPUnit_Extensions_Selenium2TestCase
 //        
 //    }
 
-    //put your code here
-    protected function setUp()
-    {
-        $this->setBrowser('firefox');
-        $this->setBrowserUrl('http://debug.store.sbcp.live/');
-    }
+//    //put your code here
+//    protected function setUp()
+//    {
+//        $this->setBrowser('firefox');
+//        $this->setBrowserUrl('http://debug.store.sbcp.live/');
+//    }
 
     /**
      * @test                                          
