@@ -19,19 +19,19 @@
  */
 class ManterBancoDadosEmailTest extends PHPUnit_Extensions_Selenium2TestCase
 {
-
-    public function createApplication()
-    {
-        return require __DIR__ . "../src/app.php";
-        
-    }
+//
+//    public function createApplication()
+//    {
+//        return require __DIR__ . "../src/app.php";
+//        
+//    }
 
 //    //put your code here
-//    protected function setUp()
-//    {
-//        $this->setBrowser('firefox');
-//        $this->setBrowserUrl('http://debug.store.sbcp.live/');
-//    }
+    protected function setUp()
+    {
+        $this->setBrowser('firefox');
+        $this->setBrowserUrl('http://debug.store.sbcp.live/');
+    }
 
     /**
      * @test                                          
