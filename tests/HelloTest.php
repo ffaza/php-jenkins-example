@@ -1,14 +1,14 @@
 
 <?php
 
-class HelloTest extends Silex\WebTestCase
+class HelloTest /*extends Silex\WebTestCase*/
 {
-    public function createApplication()
-    {
-        //return require __DIR__ . "/../src/app.php";
-        return require __DIR__ . "/../src/app.php";
-    }
-    
+//    public function createApplication()
+//    {
+//        //return require __DIR__ . "/../src/app.php";
+//        return require __DIR__ . "/../src/app.php";
+//    }
+//    
     public function testHelloNameExample()
     {
         $client = $this->createClient();
@@ -17,4 +17,7 @@ class HelloTest extends Silex\WebTestCase
         $this->assertTrue($client->getResponse()->isOk());
         $this->assertContains("test", $client->getResponse()->getContent());
     }
+
+    
+
 }
